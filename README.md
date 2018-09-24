@@ -6,5 +6,12 @@
 - Download the repository 
 - Install NodeJS
 - Install MongoDB 
-- Run npm install to install all the dependencies
+- Install node modules
+```
+npm install 
+```
+- Use the below command to run it
+```
+node server/server.js
+```
 - Go to http://localhost:3000/home to open it
