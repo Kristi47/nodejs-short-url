@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{pageTitle}}</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container" style="margin-top:20px;">
+            <div class="row" style="text-align:center;">
+                {{> header}}
+            </div>
+
+            <div class="row" style="width:65%;margin:35px 0px 35px 17.5%;text-align:center;">
+                
+                    <div class="form-group"> 
+                        <input type="text" class="form-control"  name="url" id="url" placeholder="Enter your URL..">
+                    </div>
+                    <div class="form-group"> 
+                        <input type="button" name="url_button" id="url_button" class="btn btn-success" value="Short URL">
+                    </div>
+
+                     <div class="form-group" id="short_url"> 
+                        
+                    </div>
+            </div>
+
+            <div class="row" style="text-align:center;padding-top:10px;border-top:2px solid #ccc">
+                {{> footer}}
+            </div>
+
+             <div class="row" style="width:65%;margin:35px 0px 35px 17.5%;text-align:center;">
+                    <div class="form-group" id="show_url_list" style="cursor:pointer;background-color:#ccc;padding:8px;"> 
+                        Show all URL
+                    </div>
+                    <div class="form-group" id="short_url_list"> 
+                        
+                    </div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
